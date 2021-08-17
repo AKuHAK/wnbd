@@ -18,4 +18,4 @@ jobs:
 
       - name: Build
         run: |
-          msbuild wnbd\vstudio\wnbd.sln
+          msbuild vstudio\wnbd.sln
