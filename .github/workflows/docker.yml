@@ -37,6 +37,7 @@ jobs:
     - uses: docker/build-push-action@v2
       with:
         push: true
+        file: ./Dockerfile/Dockerfile
         tags: ${{ github.repository }}:${{ env.DOCKER_TAG }}
 
     - name: Send Compile action
