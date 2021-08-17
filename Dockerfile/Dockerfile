@@ -1,8 +1,9 @@
 # escape=`
 
-ARG WIN_VER="ltsc2019"
+# ARG WIN_VER="ltsc2019"
 
-FROM mcr.microsoft.com/windows/servercore:$WIN_VER
+# FROM mcr.microsoft.com/windows/servercore:$WIN_VER
+FROM mcr.microsoft.com/windows/servercore
 
 ADD https://aka.ms/vs/16/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
 ADD https://chocolatey.org/install.ps1 C:\TEMP\choco-install.ps1
