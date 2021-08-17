@@ -35,8 +35,8 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 
   <Target Name="Build">
-    <Exec Command="powershell.exe -executionpolicy bypass -file &quot;$(SolutionDir)\generate_version_h.ps1&quot;" />
-    <Exec Command="powershell.exe -executionpolicy bypass -file &quot;$(SolutionDir)\..\get_dependencies.ps1&quot;" />
+    <Exec Command="powershell.exe -executionpolicy bypass -file &quot;$(SolutionDir)generate_version_h.ps1&quot;" />
+    <Exec Command="powershell.exe -executionpolicy bypass -file &quot;$(SolutionDir)..\get_dependencies.ps1&quot;" />
     <PropertyGroup>
       <MissingDepsError>Missing dependency: {0}. It was supposed to be retrieved using "get_dependencies.ps1".</MissingDepsError>
     </PropertyGroup>
