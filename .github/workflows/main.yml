@@ -21,4 +21,14 @@ jobs:
       - name: Build
         run: |
           cd vstudio
-          msbuild wnbd.sln
+          msbuild wnbd.sln /p:Configuration=Release
+          
+      - uses: actions/upload-artifact@v2
+        with:
+          name: WNBD
+          path: |
+            vstudio/x64/Release/wnbd-client.exe
+            vstudio/x64/Release/driver/**/*
+            vstudio/x64/Release/libwnbd.dll
+            vstudio/reinstall.ps1
+            
