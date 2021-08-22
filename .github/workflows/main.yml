@@ -26,7 +26,7 @@ jobs:
           copy x64/Release/wnbd-client.exe Release/
           copy x64/Release/driver/**/* Release/
           copy x64/Release/libwnbd.dll Release/
-          copy ../reinstall.ps1 Release/
+          copy reinstall.ps1 Release/
           copy wnbdevents.xml Release/
           
       - uses: actions/upload-artifact@v2
