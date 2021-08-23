@@ -24,7 +24,7 @@ jobs:
           msbuild wnbd.sln /p:Configuration=Release
           mkdir Release
           copy x64/Release/wnbd-client.exe Release/
-          copy x64/Release/driver/**/* Release/
+          copy x64/Release/driver/* Release/
           copy x64/Release/libwnbd.dll Release/
           copy reinstall.ps1 Release/
           copy wnbdevents.xml Release/
